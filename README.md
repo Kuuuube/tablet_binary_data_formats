@@ -1,1 +1,7 @@
-# tablet_binary_data_formats
+# Tablet Binary Data Formats
+
+Reverse engineered data formats from drawing tablets.
+
+## Wacom
+
+[GD-xxxx-U](./docs/gd-xxxx-u/gd-xxxx-u.md)

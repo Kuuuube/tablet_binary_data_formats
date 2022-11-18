@@ -1,7 +1,7 @@
-﻿Tool Report,,,,,,,,
+Tool Report,,,,,,,,
 ,#7,#6,#5,#4,#3,#2,#1,#0
 0,0,0,0,0,0,0,1,0
-1,1,Proximity,ReportFlag,0,0,0,1,0
+1,1,Proximity,ReportFlag,0,0,0,ToolReportFlag,0
 2,T11,T10,T9,T8,T7,T6,T5,T4
 3,T3,T2,T1,T0,Ser34,Ser33,Ser32,Ser31
 4,Ser30,Ser29,Ser28,Ser27,Ser26,Ser25,Ser24,Ser23

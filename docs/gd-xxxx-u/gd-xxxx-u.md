@@ -6,18 +6,18 @@ Each cell is one bit, rows are byte numbers, and columns are bit numbers from MS
 
 ### Tool Report
 
-|   | #7    | #6        | #5         | #4    | #3    | #2    | #1    | #0    |
-|:-:|:-----:|:---------:|:----------:|:-----:|:-----:|:-----:|:-----:|:-----:|
-| 0 | 0     | 0         | 0          | 0     | 0     | 0     | 1     | 0     |
-| 1 | 1     | Proximity | ReportFlag | 0     | 0     | 0     | 1     | 0     |
-| 2 | T11   | T10       | T9         | T8    | T7    | T6    | T5    | T4    |
-| 3 | T3    | T2        | T1         | T0    | Ser34 | Ser33 | Ser32 | Ser31 |
-| 4 | Ser30 | Ser29     | Ser28      | Ser27 | Ser26 | Ser25 | Ser24 | Ser23 |
-| 5 | Ser22 | Ser21     | Ser20      | Ser19 | Ser18 | Ser17 | Ser16 | Ser15 |
-| 6 | Ser14 | Ser13     | Ser12      | Ser11 | Ser10 | Ser0  | Ser9  | Ser8  |
-| 7 | Ser7  | Ser6      | Ser5       | Ser4  | Ser3  | Ser2  | Ser1  | Ser0  |
-| 8 | 0     | 0         | 0          | 0     | 0     | 0     | 0     | 0     |
-| 9 | H4    | H3        | H2         | H1    | H0    | 0     | 0     | 0     |
+|   |   #7  |     #6    |     #5     |   #4  |   #3  |   #2  |       #1       |   #0  |
+|:-:|:-----:|:---------:|:----------:|:-----:|:-----:|:-----:|:--------------:|:-----:|
+| 0 |   0   |     0     |      0     |   0   |   0   |   0   |        1       |   0   |
+| 1 |   1   | Proximity | ReportFlag |   0   |   0   |   0   | ToolReportFlag |   0   |
+| 2 |  T11  |    T10    |     T9     |   T8  |   T7  |   T6  |       T5       |   T4  |
+| 3 |   T3  |     T2    |     T1     |   T0  | Ser34 | Ser33 |      Ser32     | Ser31 |
+| 4 | Ser30 |   Ser29   |    Ser28   | Ser27 | Ser26 | Ser25 |      Ser24     | Ser23 |
+| 5 | Ser22 |   Ser21   |    Ser20   | Ser19 | Ser18 | Ser17 |      Ser16     | Ser15 |
+| 6 | Ser14 |   Ser13   |    Ser12   | Ser11 | Ser10 |  Ser0 |      Ser9      |  Ser8 |
+| 7 |  Ser7 |    Ser6   |    Ser5    |  Ser4 |  Ser3 |  Ser2 |      Ser1      |  Ser0 |
+| 8 |   0   |     0     |      0     |   0   |   0   |   0   |        0       |   0   |
+| 9 |   H4  |     H3    |     H2     |   H1  |   H0  |   0   |        0       |   0   |
 
 ### Pen Report
 
@@ -68,7 +68,11 @@ Each cell is one bit, rows are byte numbers, and columns are bit numbers from MS
 
 - Proximity = 1 when a tool is inside proximity, 0 otherwise
 
-- ReportFlag = 0 when the report is a Tool Report, 1 otherwise
+- ReportFlag = 1 when the report is a Mouse or Pen Report, 0 otherwise
+
+- ToolReportFlag = 1 when the report is a Tool Report, 0 otherwise
+
+    When ToolReportFlag is 1, ReportFlag will always be 0
 
 - T = Tool
 

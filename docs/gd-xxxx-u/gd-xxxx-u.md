@@ -92,7 +92,7 @@ Each cell is one bit, rows are byte numbers, and columns are bit numbers from MS
 
 - B = Button data
 
-    `Pen Report`: B0 = bottom pen button, B1 = top pen button
+    `Pen Report`: B0 = bottom pen side button, B1 = top pen side button
 
     `Mouse Report 0`: B0 = front left, B1 = front middle, B2 = front right, B3 = back left, B4 = back right
 
@@ -102,13 +102,13 @@ Each cell is one bit, rows are byte numbers, and columns are bit numbers from MS
 
 - P = Pressure data
 
-- SXt = 0 when tilt is negative (tilted right), 1 when tilt is positive (tilted left)
+- SXt = 0 when tilt is negative (tilted left), 1 when tilt is positive (tilted right)
 
     (Wacom's spec at the time these tablets were made likely flipped these. Above is how modern standards would define tilt negative vs positive.)
 
 - Xt = Tilt value in X direction
 
-- SYt = 0 when tilt is negative (tilted forwards), 1 when tilt is positive (tilted backwards)
+- SYt = 0 when tilt is negative (tilted backwards), 1 when tilt is positive (tilted forwards)
 
     (Wacom's spec at the time these tablets were made likely flipped these. Above is how modern standards would define tilt negative vs positive.)
 

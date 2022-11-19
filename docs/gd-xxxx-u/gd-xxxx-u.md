@@ -104,13 +104,17 @@ Each cell is one bit, rows are byte numbers, and columns are bit numbers from MS
 
 - SXt = 0 when tilt is negative (tilted left), 1 when tilt is positive (tilted right)
 
-    (Wacom's spec at the time these tablets were made likely flipped these. Above is how modern standards would define tilt negative vs positive.)
+    This bit acts like an extension of the tilt value. When parsing the tilt value, it is most sensible to include this bit as a the most signifigant normal tilt bit, then subtract the tilt value by half the maximum. It should likely only be used as a positive/negative in cases where direction matters but exact tilt does not.
+
+    Wacom's spec at the time these tablets were made likely flipped these. Above is how modern standards would define tilt negative vs positive.
 
 - Xt = Tilt value in X direction
 
 - SYt = 0 when tilt is negative (tilted backwards), 1 when tilt is positive (tilted forwards)
 
-    (Wacom's spec at the time these tablets were made likely flipped these. Above is how modern standards would define tilt negative vs positive.)
+    This bit acts like an extension of the tilt value. When parsing the tilt value, it is most sensible to include this bit as a the most signifigant normal tilt bit, then subtract the tilt value by half the maximum. It should likely only be used as a positive/negative in cases where direction matters but exact tilt does not.
+
+    Wacom's spec at the time these tablets were made likely flipped these. Above is how modern standards would define tilt negative vs positive.
 
 - Yt = Tilt value in Y direction
 

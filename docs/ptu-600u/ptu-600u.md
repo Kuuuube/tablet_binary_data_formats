@@ -1,6 +1,10 @@
 # PTU-600U
 
-## Pen Report
+## Format
+
+Each cell is one bit, rows are byte numbers, and columns are bit numbers from MSB to LSB.
+
+### Pen Report
 
 |   |  #7 |  #6 |     #5    |  #4 |  #3 |   #2   | #1 | #0 |
 |:-:|:---:|:---:|:---------:|:---:|:---:|:------:|:--:|:--:|

@@ -109,6 +109,8 @@ Note: These reports are sent at 20hz on the CTL-480. It may contain battery data
 
 ## Key
 
+- Byte 0 = `01100000` for Idle Reports, `00000010` otherwise
+
 - Proximity = 1 when a tool is inside proximity, 0 otherwise
 
 - ? = Changes depending on the pen or pen side active for unknown reasons

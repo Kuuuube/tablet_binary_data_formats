@@ -81,6 +81,8 @@ Each cell is one bit, rows are byte numbers, and columns are bit numbers from MS
 
 ## Key
 
+- Byte 0 = `00001100` for Aux Reports, `00000010` otherwise
+
 - Proximity = 1 when a tool is inside proximity, 0 otherwise
 
 - ReportFlag = 1 when the report is a Mouse or Pen Report, 0 otherwise

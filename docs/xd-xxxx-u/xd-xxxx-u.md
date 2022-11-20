@@ -1,4 +1,4 @@
-# GD-xxxx-U
+# XD-xxxx-U
 
 ## Format
 

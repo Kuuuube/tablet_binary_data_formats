@@ -50,11 +50,27 @@ Untested but likely matching [GD-xxxx-U](../gd-xxxx-u/gd-xxxx-u.md#mouse-report-
 
 - T = Tool
 
-    Pen = `10000101 0010`
+    Classic Pen = `10000100 0010` (Untested but likely)
 
-    Eraser = `10000101 1010`
+    Classic Pen Eraser = `10000100 1010` (Untested but likely)
 
-    Mouse = Untested
+    Grip Pen = `10000101 0010`
+
+    Grip Pen Eraser = `10000101 1010`
+
+    Airbrush = `10010001 0010` (Untested but likely)
+
+    Airbrush Eraser = `10010001 1010` (Untested but likely)
+
+    Inking Pen = `00000001 0010` (Untested but likely)
+
+    Stroke Pen = `00000011 0010` (Untested but likely)
+
+    2D Mouse = `00000000 0111` (Untested but likely)
+
+    4D Mouse = `00001001 0100` (Untested but likely)
+
+    Lens Cursor = `00001001 0110` (Untested but likely)
 
 - Ser = Serial number
 

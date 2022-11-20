@@ -78,9 +78,19 @@ Each cell is one bit, rows are byte numbers, and columns are bit numbers from MS
 
     Pen = `10000010 0010`
 
-    Eraser = `10000010 1010`
+    Pen Eraser = `10000010 1010`
 
-    Mouse = `00001001 0100`
+    Airbrush = `11010001 0010` (Untested but likely)
+
+    Airbrush Eraser = `10010001 1010` (Untested but likely)
+
+    Inking Pen = `10000001 0010` (Untested but likely)
+
+    Stroke Pen = `10000011 0010` (Untested but likely)
+
+    4D Mouse = `00001001 0100`
+
+    Lens Cursor = `00001001 0110` (Untested but likely)
 
 - Ser = Serial number
 

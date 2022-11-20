@@ -107,7 +107,7 @@ Each cell is one bit, rows are byte numbers, and columns are bit numbers from MS
 
     Inking Pen = `10000000 0001`
 
-    2D Mouse = `00000001 0111`
+    Mouse = `00000001 0111`
 
     Lens Cursor = `00001001 0111`
 

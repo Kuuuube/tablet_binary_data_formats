@@ -64,6 +64,21 @@ Each cell is one bit, rows are byte numbers, and columns are bit numbers from MS
 | 8 |  0  |    B4    |     B3     |     B2    |     B1     |  B0 |  Sf | Sb |
 | 9 |  H5 |    H4    |     H3     |     H2    |     H1     |  H0 |  X0 | Y0 |
 
+### Aux Report
+
+|   |  #7  |  #6  |  #5  |   #4  |   #3  |   #2  |  #1  |  #0  |
+|:-:|:----:|:----:|:----:|:-----:|:-----:|:-----:|:----:|:----:|
+| 0 |   0  |   0  |   0  |   0   |   1   |   1   |   0  |   0  |
+| 1 |   0  |   0  |   0  | Lts11 | Lts11 | Lts10 | Lts9 | Lts8 |
+| 2 | Lts7 | Lts6 | Lts5 |  Lts4 |  Lts3 |  Lts2 | Lts1 | Lts0 |
+| 3 |   0  |   0  |   0  | Rts11 | Rts11 | Rts10 | Rts9 | Rts8 |
+| 4 | Rts7 | Rts6 | Rts5 |  Rts4 |  Rts3 |  Rts2 | Rts1 | Rts0 |
+| 5 |   0  |   0  |   0  |   0   |   B3  |   B2  |  B1  |  B0  |
+| 6 |   0  |   0  |   0  |   0   |   B7  |   B6  |  B5  |  B4  |
+| 7 |   0  |   0  |   0  |   0   |   0   |   0   |   0  |   0  |
+| 8 |   0  |   0  |   0  |   0   |   0   |   0   |   0  |   0  |
+| 9 |   0  |   0  |   0  |   0   |   0   |   0   |   0  |   0  |
+
 ## Key
 
 - Proximity = 1 when a tool is inside proximity, 0 otherwise
@@ -110,6 +125,8 @@ Each cell is one bit, rows are byte numbers, and columns are bit numbers from MS
 
     `Mouse Report`: B0 = front left, B1 = front middle, B2 = front right, B3 = side left, B4 = side right
 
+    `Aux Report`: B0 = top right button on the tablet's left side, B1 = middle right button on the tablet's left side, B2 = top left button on the tablet's left side, B3 = bottom button on the tablet's left side, B4 = top right button on the tablet's right side, B5 = middle right button on the tablet's right side, B6 = top left button on the tablet's right side, B7 = bottom button on the tablet's right side
+
 - X = X coordinate
 
 - Y = Y coordinate
@@ -149,3 +166,15 @@ Each cell is one bit, rows are byte numbers, and columns are bit numbers from MS
 - Sf = 1 when scrolling forward, 0 otherwise
 
 - Sb = 1 when scrolling backwards, 0 otherwise
+
+- Lts = Left touch strip value
+
+    Each bit corresponds to a position on the touch strip. Only one bit will be 1 at a time.
+
+    Lts0 is 1 when at the top of the touch strip. Lts11 is 1 when at the bottom of the touch strip.
+
+- Rts = Right touch strip value
+
+    Each bit corresponds to a position on the touch strip. Only one bit will be 1 at a time.
+
+    Rts0 is 1 when at the top of the touch strip. Rts11 is 1 when at the bottom of the touch strip.

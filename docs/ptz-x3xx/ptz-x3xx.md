@@ -24,7 +24,7 @@ Each cell is one bit, rows are byte numbers, and columns are bit numbers from MS
 |   |  #7 |    #6    |     #5     |     #4    |     #3     |  #2 |  #1 |  #0 |
 |:-:|:---:|:--------:|:----------:|:---------:|:----------:|:---:|:---:|:---:|
 | 0 |  0  |     0    |      0     |     0     |      0     |  0  |  1  |  0  |
-| 1 |  1  | Proxmity | ReportFlag | MouseFlag | MarkerFlag |  B1 |  B0 |     |
+| 1 |  1  | Proxmity | ReportFlag | MouseFlag | MarkerFlag |  B1 |  B0 |  0  |
 | 2 | X15 |    X14   |     X13    |    X12    |     X11    | X10 |  X9 |  X8 |
 | 3 |  X7 |    X6    |     X5     |     X4    |     X3     |  X2 |  X1 |  X0 |
 | 4 | Y15 |    Y14   |     Y13    |    Y12    |     Y11    | Y10 |  Y9 |  Y8 |

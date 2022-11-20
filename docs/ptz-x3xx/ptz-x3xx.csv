@@ -1,64 +1,64 @@
-Tool Report								
-	#7	#6	#5	#4	#3	#2	#1	#0
-0	0	0	0	0	0	0	1	0
-1	1	Proximity	ReportFlag	0	0	0	ToolReportFlag	0
-2	T11	T10	T9	T8	T7	T6	T5	T4
-3	T3	T2	T1	T0	Ser30	Ser29	Ser28	Ser27
-4	Ser26	Ser25	Ser24	Ser23	Ser22	Ser21	Ser20	Ser19
-5	Ser18	Ser17	Ser16	Ser15	Ser14	Ser13	Ser12	Ser11
-6	Ser10	Ser0	Ser9	Ser8	Ser7	Ser6	Ser5	Ser4
-7	Ser3	Ser2	Ser1	Ser0	0	0	0	0
-8	0	0	0	0	0	0	0	0
-9	0	0	0	0	0	0	0	0
-								
-Pen Report								
-	#7	#6	#5	#4	#3	#2	#1	#0
-0	0	0	0	0	0	0	1	0
-1	1	Proxmity	ReportFlag	MouseFlag	MarkerFlag	B1	B0	
-2	X15	X14	X13	X12	X11	X10	X9	X8
-3	X7	X6	X5	X4	X3	X2	X1	X0
-4	Y15	Y14	Y13	Y12	Y11	Y10	Y9	Y8
-5	Y7	Y6	Y5	Y4	Y3	Y2	Y1	Y0
-6	P9	P8	P7	P6	P5	P4	P3	P2
-7	P1	P0	SXt6	Xt5	Xt4	Xt3	Xt2	Xt1
-8	Xt0	SYt6	Yt5	Yt4	Yt3	Yt2	Yt1	Yt0
-9	H7	H6	H5	H4	H3	H2	H1	H0
-								
-Marker Report								
-	#7	#6	#5	#4	#3	#2	#1	#0
-0	0	0	0	0	0	0	1	0
-1	1	Proxmity	ReportFlag	MouseFlag	MarkerFlag	0	1	0
-2	X15	X14	X13	X12	X11	X10	X9	X8
-3	X7	X6	X5	X4	X3	X2	X1	X0
-4	Y15	Y14	Y13	Y12	Y11	Y10	Y9	Y8
-5	Y7	Y6	Y5	Y4	Y3	Y2	Y1	Y0
-6	R9	R8	R7	R6	R5	R4	R3	R2
-7	R1	R0	Rd	0	0	0	0	0
-8	0	0	0	0	0	0	0	0
-9	H7	H6	H5	H4	H3	H2	H1	H0
-								
-Mouse Report								
-	#7	#6	#5	#4	#3	#2	#1	#0
-0	0	0	0	0	0	0	1	0
-1	1	Proxmity	ReportFlag	MouseFlag	MarkerFlag	0	0	0
-2	X15	X14	X13	X12	X11	X10	X9	X8
-3	X7	X6	X5	X4	X3	X2	X1	X0
-4	Y15	Y14	Y13	Y12	Y11	Y10	Y9	Y8
-5	Y7	Y6	Y5	Y4	Y3	Y2	Y1	Y0
-6	0	0	0	0	0	0	0	0
-7	0	0	0	0	0	0	0	0
-8	0	B4	B3	B2	B1	B0	Sf	Sb
-9	H7	H6	H5	H4	H3	H2	H1	H0
-								
-Aux Report								
-	#7	#6	#5	#4	#3	#2	#1	#0
-0	0	0	0	0	1	1	0	0
-1	0	0	0	Lts11	Lts11	Lts10	Lts9	Lts8
-2	Lts7	Lts6	Lts5	Lts4	Lts3	Lts2	Lts1	Lts0
-3	0	0	0	Rts11	Rts11	Rts10	Rts9	Rts8
-4	Rts7	Rts6	Rts5	Rts4	Rts3	Rts2	Rts1	Rts0
-5	0	0	0	0	B3	B2	B1	B0
-6	0	0	0	0	B7	B6	B5	B4
-7	0	0	0	0	0	0	0	0
-8	0	0	0	0	0	0	0	0
-9	0	0	0	0	0	0	0	0
+Tool Report,,,,,,,,
+,#7,#6,#5,#4,#3,#2,#1,#0
+0,0,0,0,0,0,0,1,0
+1,1,Proximity,ReportFlag,0,0,0,ToolReportFlag,0
+2,T11,T10,T9,T8,T7,T6,T5,T4
+3,T3,T2,T1,T0,Ser30,Ser29,Ser28,Ser27
+4,Ser26,Ser25,Ser24,Ser23,Ser22,Ser21,Ser20,Ser19
+5,Ser18,Ser17,Ser16,Ser15,Ser14,Ser13,Ser12,Ser11
+6,Ser10,Ser0,Ser9,Ser8,Ser7,Ser6,Ser5,Ser4
+7,Ser3,Ser2,Ser1,Ser0,0,0,0,0
+8,0,0,0,0,0,0,0,0
+9,0,0,0,0,0,0,0,0
+,,,,,,,,
+Pen Report,,,,,,,,
+,#7,#6,#5,#4,#3,#2,#1,#0
+0,0,0,0,0,0,0,1,0
+1,1,Proxmity,ReportFlag,MouseFlag,MarkerFlag,B1,B0,0
+2,X15,X14,X13,X12,X11,X10,X9,X8
+3,X7,X6,X5,X4,X3,X2,X1,X0
+4,Y15,Y14,Y13,Y12,Y11,Y10,Y9,Y8
+5,Y7,Y6,Y5,Y4,Y3,Y2,Y1,Y0
+6,P9,P8,P7,P6,P5,P4,P3,P2
+7,P1,P0,SXt6,Xt5,Xt4,Xt3,Xt2,Xt1
+8,Xt0,SYt6,Yt5,Yt4,Yt3,Yt2,Yt1,Yt0
+9,H7,H6,H5,H4,H3,H2,H1,H0
+,,,,,,,,
+Marker Report,,,,,,,,
+,#7,#6,#5,#4,#3,#2,#1,#0
+0,0,0,0,0,0,0,1,0
+1,1,Proxmity,ReportFlag,MouseFlag,MarkerFlag,0,1,0
+2,X15,X14,X13,X12,X11,X10,X9,X8
+3,X7,X6,X5,X4,X3,X2,X1,X0
+4,Y15,Y14,Y13,Y12,Y11,Y10,Y9,Y8
+5,Y7,Y6,Y5,Y4,Y3,Y2,Y1,Y0
+6,R9,R8,R7,R6,R5,R4,R3,R2
+7,R1,R0,Rd,0,0,0,0,0
+8,0,0,0,0,0,0,0,0
+9,H7,H6,H5,H4,H3,H2,H1,H0
+,,,,,,,,
+Mouse Report,,,,,,,,
+,#7,#6,#5,#4,#3,#2,#1,#0
+0,0,0,0,0,0,0,1,0
+1,1,Proxmity,ReportFlag,MouseFlag,MarkerFlag,0,0,0
+2,X15,X14,X13,X12,X11,X10,X9,X8
+3,X7,X6,X5,X4,X3,X2,X1,X0
+4,Y15,Y14,Y13,Y12,Y11,Y10,Y9,Y8
+5,Y7,Y6,Y5,Y4,Y3,Y2,Y1,Y0
+6,0,0,0,0,0,0,0,0
+7,0,0,0,0,0,0,0,0
+8,0,B4,B3,B2,B1,B0,Sf,Sb
+9,H7,H6,H5,H4,H3,H2,H1,H0
+,,,,,,,,
+Aux Report,,,,,,,,
+,#7,#6,#5,#4,#3,#2,#1,#0
+0,0,0,0,0,1,1,0,0
+1,0,0,0,Lts11,Lts11,Lts10,Lts9,Lts8
+2,Lts7,Lts6,Lts5,Lts4,Lts3,Lts2,Lts1,Lts0
+3,0,0,0,Rts11,Rts11,Rts10,Rts9,Rts8
+4,Rts7,Rts6,Rts5,Rts4,Rts3,Rts2,Rts1,Rts0
+5,0,0,0,0,B3,B2,B1,B0
+6,0,0,0,0,B7,B6,B5,B4
+7,0,0,0,0,0,0,0,0
+8,0,0,0,0,0,0,0,0
+9,0,0,0,0,0,0,0,0

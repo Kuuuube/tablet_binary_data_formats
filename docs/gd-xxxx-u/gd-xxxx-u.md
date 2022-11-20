@@ -51,18 +51,18 @@ Each cell is one bit, rows are byte numbers, and columns are bit numbers from MS
 
 ### Mouse Report 1
 
-|   | #7  | #6        | #5         | #4  | #3  | #2  | #1            | #0 |
+|   |  #7 |     #6    |     #5     |  #4 |  #3 |  #2 |       #1      | #0 |
 |:-:|:---:|:---------:|:----------:|:---:|:---:|:---:|:-------------:|:--:|
-| 0 | 0   | 0         | 0          | 0   | 0   | 0   | 1             | 0  |
-| 1 | 1   | Proximity | ReportFlag | 0   | 1   | 0   | MouseReportId | 0  |
-| 2 | X15 | X14       | X13        | X12 | X11 | X10 | X9            | X8 |
-| 3 | X7  | X6        | X5         | X4  | X3  | X2  | X1            | X0 |
-| 4 | Y15 | Y14       | Y13        | Y12 | Y11 | Y10 | Y9            | Y8 |
-| 5 | Y7  | Y6        | Y5         | Y4  | Y3  | Y2  | Y1            | Y0 |
-| 6 | R10 | R9        | R8         | R7  | R6  | R5  | R4            | R3 |
-| 7 | R2  | R1        | Rd         | 0   | 0   | 0   | 0             | 0  |
-| 8 | 0   | 0         | 0          | 0   | 0   | 0   | 0             | 0  |
-| 9 | H4  | H3        | H2         | H1  | H0  | 0   | 0             | 0  |
+| 0 |  0  |     0     |      0     |  0  |  0  |  0  |       1       |  0 |
+| 1 |  1  | Proximity | ReportFlag |  0  |  1  |  0  | MouseReportId |  0 |
+| 2 | X15 |    X14    |     X13    | X12 | X11 | X10 |       X9      | X8 |
+| 3 |  X7 |     X6    |     X5     |  X4 |  X3 |  X2 |       X1      | X0 |
+| 4 | Y15 |    Y14    |     Y13    | Y12 | Y11 | Y10 |       Y9      | Y8 |
+| 5 |  Y7 |     Y6    |     Y5     |  Y4 |  Y3 |  Y2 |       Y1      | Y0 |
+| 6 |  R9 |     R8    |     R7     |  R6 |  R5 |  R4 |       R3      | R2 |
+| 7 |  R1 |     R0    |     Rd     |  0  |  0  |  0  |       0       |  0 |
+| 8 |  0  |     0     |      0     |  0  |  0  |  0  |       0       |  0 |
+| 9 |  H4 |     H3    |     H2     |  H1 |  H0 |  0  |       0       |  0 |
 
 ## Key
 
@@ -104,17 +104,13 @@ Each cell is one bit, rows are byte numbers, and columns are bit numbers from MS
 
 - SXt = 0 when tilt is negative (tilted left), 1 when tilt is positive (tilted right)
 
-    This bit acts like an extension of the tilt value. When parsing the tilt value, it is most sensible to include this bit as a the most significant normal tilt bit, then subtract the tilt value by half the maximum. It should likely only be used as a positive/negative in cases where direction matters but exact tilt does not.
-
-    Wacom's spec at the time these tablets were made likely flipped these. Above is how modern standards would define tilt negative vs positive.
+    This bit should also be used as the most significant tilt value bit, then the tilt should be subtracted by half the maximum to split the tilt into positive or negative. It should likely only be used to determine when the tilt is positive/negative in cases where direction matters but exact tilt does not.
 
 - Xt = Tilt value in X direction
 
 - SYt = 0 when tilt is negative (tilted backwards), 1 when tilt is positive (tilted forwards)
 
-    This bit acts like an extension of the tilt value. When parsing the tilt value, it is most sensible to include this bit as a the most significant normal tilt bit, then subtract the tilt value by half the maximum. It should likely only be used as a positive/negative in cases where direction matters but exact tilt does not.
-
-    Wacom's spec at the time these tablets were made likely flipped these. Above is how modern standards would define tilt negative vs positive.
+    This bit should also be used as the most significant tilt value bit, then the tilt should be subtracted by half the maximum to split the tilt into positive or negative. It should likely only be used to determine when the tilt is positive/negative in cases where direction matters but exact tilt does not.
 
 - Yt = Tilt value in Y direction
 
@@ -126,6 +122,6 @@ Each cell is one bit, rows are byte numbers, and columns are bit numbers from MS
 
 - Thd = 0 when thumbwheel is rotated backwards, 1 when thumbwheel is rotated forwards
 
-- R = Rotation value, 0 when the front of the tool is aligned with the front of the tablet
+- R = Rotation value, 0 when the front of the tool is aligned with the front of the tablet. Max value when the front of the tool is aligned with the back of the tablet.
 
-- Rd = 0 when rotated to the left, 1 when rotated to the right
+- Rd = 0 when when the front of the tool is pointing to the left side of the tablet at any angle, 1 when when the front of the tool is pointing to the right side of the tablet at any angle

@@ -76,16 +76,12 @@ Untested but likely matching [GD-xxxx-U](../gd-xxxx-u/gd-xxxx-u.md#mouse-report-
 
 - SXt = 0 when tilt is negative (tilted left), 1 when tilt is positive (tilted right)
 
-    This bit acts like an extension of the tilt value. When parsing the tilt value, it is most sensible to include this bit as a the most significant normal tilt bit, then subtract the tilt value by half the maximum. It should likely only be used as a positive/negative in cases where direction matters but exact tilt does not.
-
-    Wacom's spec at the time these tablets were made likely flipped these. Above is how modern standards would define tilt negative vs positive.
+    This bit should also be used as the most significant tilt value bit, then the tilt should be subtracted by half the maximum to split the tilt into positive or negative. It should likely only be used to determine when the tilt is positive/negative in cases where direction matters but exact tilt does not.
 
 - Xt = Tilt value in X direction
 
 - SYt = 0 when tilt is negative (tilted backwards), 1 when tilt is positive (tilted forwards)
 
-    This bit acts like an extension of the tilt value. When parsing the tilt value, it is most sensible to include this bit as a the most significant normal tilt bit, then subtract the tilt value by half the maximum. It should likely only be used as a positive/negative in cases where direction matters but exact tilt does not.
-
-    Wacom's spec at the time these tablets were made likely flipped these. Above is how modern standards would define tilt negative vs positive.
+    This bit should also be used as the most significant tilt value bit, then the tilt should be subtracted by half the maximum to split the tilt into positive or negative. It should likely only be used to determine when the tilt is positive/negative in cases where direction matters but exact tilt does not.
 
 - Yt = Tilt value in Y direction

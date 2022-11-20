@@ -92,7 +92,7 @@ Note: The aux report should also contain touch data. Touch data is currently unt
 
 ## Idle Report
 
-Note: These reports are sent at 20hz on the CTL-480. The data contained is unknown.
+Note: These reports are sent at 20hz on the CTL-480. It may contain battery data for wireless mode but that is untested.
 
 |   | #7 | #6 | #5 | #4 | #3 | #2 | #1 | #0 |
 |:-:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|

@@ -36,18 +36,18 @@ Each cell is one bit, rows are byte numbers, and columns are bit numbers from MS
 
 ### Marker Report
 
-|   |  #7 |    #6    |     #5     |     #4    |     #3     |  #2 |     #1     | #0 |
-|:-:|:---:|:--------:|:----------:|:---------:|:----------:|:---:|:----------:|:--:|
-| 0 |  0  |     0    |      0     |     0     |      0     |  0  |      1     |  0 |
-| 1 |  1  | Proxmity | ReportFlag | MouseFlag | MarkerFlag |  0  | MarkerFlag |  0 |
-| 2 | X15 |    X14   |     X13    |    X12    |     X11    | X10 |     X9     | X8 |
-| 3 |  X7 |    X6    |     X5     |     X4    |     X3     |  X2 |     X1     | X0 |
-| 4 | Y15 |    Y14   |     Y13    |    Y12    |     Y11    | Y10 |     Y9     | Y8 |
-| 5 |  Y7 |    Y6    |     Y5     |     Y4    |     Y3     |  Y2 |     Y1     | Y0 |
-| 6 |  R9 |    R8    |     R7     |     R6    |     R5     |  R4 |     R3     | R2 |
-| 7 |  R1 |    R0    |     Rd     |     0     |      0     |  0  |      0     |  0 |
-| 8 |  0  |     0    |      0     |     0     |      0     |  0  |      0     |  0 |
-| 9 |  H7 |    H6    |     H5     |     H4    |     H3     |  H2 |     H1     | H0 |
+|   |  #7 |    #6    |     #5     |     #4    |     #3     |  #2 | #1 | #0 |
+|:-:|:---:|:--------:|:----------:|:---------:|:----------:|:---:|:--:|:--:|
+| 0 |  0  |     0    |      0     |     0     |      0     |  0  |  1 |  0 |
+| 1 |  1  | Proxmity | ReportFlag | MouseFlag | MarkerFlag |  0  |  1 |  0 |
+| 2 | X15 |    X14   |     X13    |    X12    |     X11    | X10 | X9 | X8 |
+| 3 |  X7 |    X6    |     X5     |     X4    |     X3     |  X2 | X1 | X0 |
+| 4 | Y15 |    Y14   |     Y13    |    Y12    |     Y11    | Y10 | Y9 | Y8 |
+| 5 |  Y7 |    Y6    |     Y5     |     Y4    |     Y3     |  Y2 | Y1 | Y0 |
+| 6 |  R9 |    R8    |     R7     |     R6    |     R5     |  R4 | R3 | R2 |
+| 7 |  R1 |    R0    |     Rd     |     0     |      0     |  0  |  0 |  0 |
+| 8 |  0  |     0    |      0     |     0     |      0     |  0  |  0 |  0 |
+| 9 |  H7 |    H6    |     H5     |     H4    |     H3     |  H2 | H1 | H0 |
 
 ### Mouse Report
 
@@ -101,8 +101,6 @@ Each cell is one bit, rows are byte numbers, and columns are bit numbers from MS
 - MouseFlag = 1 when the report is a Mouse Report, 0 otherwise
 
 - MarkerFlag = 1 when the report is a Marker Report, 0 otherwise
-
-    It is unknown why there are two marker flags. They always appear together.
 
     The marker pen alternates between sending Marker Reports and Pen Reports.
 

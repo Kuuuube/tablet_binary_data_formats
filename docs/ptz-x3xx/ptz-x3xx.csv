@@ -3,11 +3,11 @@ Tool Report,,,,,,,,
 0,0,0,0,0,0,0,1,0
 1,1,Proximity,ReportFlag,0,0,0,ToolReportFlag,0
 2,T11,T10,T9,T8,T7,T6,T5,T4
-3,T3,T2,T1,T0,Ser30,Ser29,Ser28,Ser27
-4,Ser26,Ser25,Ser24,Ser23,Ser22,Ser21,Ser20,Ser19
-5,Ser18,Ser17,Ser16,Ser15,Ser14,Ser13,Ser12,Ser11
-6,Ser10,Ser0,Ser9,Ser8,Ser7,Ser6,Ser5,Ser4
-7,Ser3,Ser2,Ser1,Ser0,0,0,0,0
+3,T3,T2,T1,T0,Ser34,Ser33,Ser32,Ser31
+4,Ser30,Ser29,Ser28,Ser27,Ser26,Ser25,Ser24,Ser23
+5,Ser22,Ser21,Ser20,Ser19,Ser18,Ser17,Ser16,Ser15
+6,Ser14,Ser13,Ser12,Ser11,Ser10,Ser0,Ser9,Ser8
+7,Ser7,Ser6,Ser5,Ser4,Ser3,Ser2,Ser1,Ser0
 8,0,0,0,0,0,0,0,0
 9,0,0,0,0,0,0,0,0
 ,,,,,,,,

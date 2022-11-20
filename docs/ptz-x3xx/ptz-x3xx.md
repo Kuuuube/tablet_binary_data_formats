@@ -6,6 +6,8 @@ Each cell is one bit, rows are byte numbers, and columns are bit numbers from MS
 
 ### Tool Report
 
+Note: Tool reports are sent once when a tool enters into range of the tablet. They are sent before any Pen or Mouse Reports.
+
 |   |   #7  |     #6    |     #5     |   #4  |   #3  |   #2  |       #1       |   #0  |
 |:-:|:-----:|:---------:|:----------:|:-----:|:-----:|:-----:|:--------------:|:-----:|
 | 0 |   0   |     0     |      0     |   0   |   0   |   0   |        1       |   0   |
@@ -34,7 +36,7 @@ Each cell is one bit, rows are byte numbers, and columns are bit numbers from MS
 | 8 | Xt0 |   SYt6   |     Yt5    |    Yt4    |     Yt3    | Yt2 | Yt1 | Yt0 |
 | 9 |  H5 |    H4    |     H3     |     H2    |     H1     |  H0 |  X0 |  Y0 |
 
-### Marker Report
+### Marker Pen Report
 
 |   |  #7 |    #6    |     #5     |     #4    |     #3     |  #2 |  #1 | #0 |
 |:-:|:---:|:--------:|:----------:|:---------:|:----------:|:---:|:---:|:--:|
@@ -117,7 +119,7 @@ Each cell is one bit, rows are byte numbers, and columns are bit numbers from MS
 
 - MouseFlag = 1 when the report is a Mouse Report, 0 otherwise
 
-- MarkerFlag = 1 when the report is a Marker Report, 0 otherwise
+- MarkerFlag = 1 when the report is a Marker Pen Report, 0 otherwise
 
     The marker pen alternates between sending Marker Reports and Pen Reports.
 

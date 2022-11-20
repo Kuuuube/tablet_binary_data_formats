@@ -6,6 +6,8 @@ Each cell is one bit, rows are byte numbers, and columns are bit numbers from MS
 
 ### Tool Report
 
+Note: Tool reports are sent once when a tool enters into range of the tablet. They are sent before any Pen or Mouse Reports.
+
 |   |   #7  |     #6    |     #5     |   #4  |   #3  |   #2  |       #1       |   #0  |
 |:-:|:-----:|:---------:|:----------:|:-----:|:-----:|:-----:|:--------------:|:-----:|
 | 0 |   0   |     0     |      0     |   0   |   0   |   0   |        1       |   0   |
@@ -36,7 +38,7 @@ Each cell is one bit, rows are byte numbers, and columns are bit numbers from MS
 
 ### Art Pen Report
 
-Untested but likely similar to [PTZ-x3xx Marker Report](../ptz-x3xx/ptz-x3xx.md#marker-report)
+Untested but likely similar to [PTZ-x3xx Marker Pen Report](../ptz-x3xx/ptz-x3xx.md#marker-pen-report)
 
 ### Mouse Report
 

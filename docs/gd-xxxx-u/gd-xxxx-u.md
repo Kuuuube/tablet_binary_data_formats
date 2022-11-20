@@ -23,48 +23,48 @@ Note: Tool reports are sent once when a tool enters into range of the tablet. Th
 
 ### Pen Report
 
-|   | #7  | #6        | #5         | #4  | #3  | #2  | #1  | #0  |
-|:-:|:---:|:---------:|:----------:|:---:|:---:|:---:|:---:|:---:|
-| 0 | 0   | 0         | 0          | 0   | 0   | 0   | 1   | 0   |
-| 1 | 1   | Proximity | ReportFlag | 0   | 0   | B1  | B0  | 0   |
-| 2 | X15 | X14       | X13        | X12 | X11 | X10 | X9  | X8  |
-| 3 | X7  | X6        | X5         | X4  | X3  | X2  | X1  | X0  |
-| 4 | Y15 | Y14       | Y13        | Y12 | Y11 | Y10 | Y9  | Y8  |
-| 5 | Y7  | Y6        | Y5         | Y4  | Y3  | Y2  | Y1  | Y0  |
-| 6 | P9  | P8        | P7         | P6  | P5  | P4  | P3  | P2  |
-| 7 | P1  | P0        | SXt6       | Xt5 | Xt4 | Xt3 | Xt2 | Xt1 |
-| 8 | Xt0 | SYt6      | Yt5        | Yt4 | Yt3 | Yt2 | Yt1 | Yt0 |
-| 9 | H4  | H3        | H2         | H1  | H0  | 0   | 0   | 0   |
+|   |  #7 |     #6    |     #5     |  #4 |     #3    |  #2 |  #1 |  #0 |
+|:-:|:---:|:---------:|:----------:|:---:|:---------:|:---:|:---:|:---:|
+| 0 |  0  |     0     |      0     |  0  |     0     |  0  |  1  |  0  |
+| 1 |  1  | Proximity | ReportFlag |  0  | MouseFlag |  B1 |  B0 |  0  |
+| 2 | X15 |    X14    |     X13    | X12 |    X11    | X10 |  X9 |  X8 |
+| 3 |  X7 |     X6    |     X5     |  X4 |     X3    |  X2 |  X1 |  X0 |
+| 4 | Y15 |    Y14    |     Y13    | Y12 |    Y11    | Y10 |  Y9 |  Y8 |
+| 5 |  Y7 |     Y6    |     Y5     |  Y4 |     Y3    |  Y2 |  Y1 |  Y0 |
+| 6 |  P9 |     P8    |     P7     |  P6 |     P5    |  P4 |  P3 |  P2 |
+| 7 |  P1 |     P0    |    SXt6    | Xt5 |    Xt4    | Xt3 | Xt2 | Xt1 |
+| 8 | Xt0 |    SYt6   |     Yt5    | Yt4 |    Yt3    | Yt2 | Yt1 | Yt0 |
+| 9 |  H4 |     H3    |     H2     |  H1 |     H0    |  0  |  0  |  0  |
 
 ### Mouse Report 0
 
-|   | #7  | #6        | #5         | #4  | #3  | #2  | #1            | #0  |
-|:-:|:---:|:---------:|:----------:|:---:|:---:|:---:|:-------------:|:---:|
-| 0 | 0   | 0         | 0          | 0   | 0   | 0   | 1             | 0   |
-| 1 | 1   | Proximity | ReportFlag | 0   | 1   | 0   | MouseReportId | 0   |
-| 2 | X15 | X14       | X13        | X12 | X11 | X10 | X9            | X8  |
-| 3 | X7  | X6        | X5         | X4  | X3  | X2  | X1            | X0  |
-| 4 | Y15 | Y14       | Y13        | Y12 | Y11 | Y10 | Y9            | Y8  |
-| 5 | Y7  | Y6        | Y5         | Y4  | Y3  | Y2  | Y1            | Y0  |
-| 6 | Th9 | Th8       | Th7        | Th6 | Th5 | Th4 | Th3           | Th2 |
-| 7 | Th1 | Th0       | 0          | 0   | 0   | 0   | 0             | 0   |
-| 8 | 0   | 0         | B4         | B3  | Thd | B2  | B1            | B0  |
-| 9 | H4  | H3        | H2         | H1  | H0  | 0   | 0             | 0   |
+|   |  #7 |     #6    |     #5     |  #4 |     #3    |  #2 |       #1      |  #0 |
+|:-:|:---:|:---------:|:----------:|:---:|:---------:|:---:|:-------------:|:---:|
+| 0 |  0  |     0     |      0     |  0  |     0     |  0  |       1       |  0  |
+| 1 |  1  | Proximity | ReportFlag |  0  | MouseFlag |  0  | MouseReportId |  0  |
+| 2 | X15 |    X14    |     X13    | X12 |    X11    | X10 |       X9      |  X8 |
+| 3 |  X7 |     X6    |     X5     |  X4 |     X3    |  X2 |       X1      |  X0 |
+| 4 | Y15 |    Y14    |     Y13    | Y12 |    Y11    | Y10 |       Y9      |  Y8 |
+| 5 |  Y7 |     Y6    |     Y5     |  Y4 |     Y3    |  Y2 |       Y1      |  Y0 |
+| 6 | Th9 |    Th8    |     Th7    | Th6 |    Th5    | Th4 |      Th3      | Th2 |
+| 7 | Th1 |    Th0    |      0     |  0  |     0     |  0  |       0       |  0  |
+| 8 |  0  |     0     |     B4     |  B3 |    Thd    |  B2 |       B1      |  B0 |
+| 9 |  H4 |     H3    |     H2     |  H1 |     H0    |  0  |       0       |  0  |
 
 ### Mouse Report 1
 
-|   |  #7 |     #6    |     #5     |  #4 |  #3 |  #2 |       #1      | #0 |
-|:-:|:---:|:---------:|:----------:|:---:|:---:|:---:|:-------------:|:--:|
-| 0 |  0  |     0     |      0     |  0  |  0  |  0  |       1       |  0 |
-| 1 |  1  | Proximity | ReportFlag |  0  |  1  |  0  | MouseReportId |  0 |
-| 2 | X15 |    X14    |     X13    | X12 | X11 | X10 |       X9      | X8 |
-| 3 |  X7 |     X6    |     X5     |  X4 |  X3 |  X2 |       X1      | X0 |
-| 4 | Y15 |    Y14    |     Y13    | Y12 | Y11 | Y10 |       Y9      | Y8 |
-| 5 |  Y7 |     Y6    |     Y5     |  Y4 |  Y3 |  Y2 |       Y1      | Y0 |
-| 6 |  R9 |     R8    |     R7     |  R6 |  R5 |  R4 |       R3      | R2 |
-| 7 |  R1 |     R0    |     Rd     |  0  |  0  |  0  |       0       |  0 |
-| 8 |  0  |     0     |      0     |  0  |  0  |  0  |       0       |  0 |
-| 9 |  H4 |     H3    |     H2     |  H1 |  H0 |  0  |       0       |  0 |
+|   |  #7 |     #6    |     #5     |  #4 |     #3    |  #2 |       #1      | #0 |
+|:-:|:---:|:---------:|:----------:|:---:|:---------:|:---:|:-------------:|:--:|
+| 0 |  0  |     0     |      0     |  0  |     0     |  0  |       1       |  0 |
+| 1 |  1  | Proximity | ReportFlag |  0  | MouseFlag |  0  | MouseReportId |  0 |
+| 2 | X15 |    X14    |     X13    | X12 |    X11    | X10 |       X9      | X8 |
+| 3 |  X7 |     X6    |     X5     |  X4 |     X3    |  X2 |       X1      | X0 |
+| 4 | Y15 |    Y14    |     Y13    | Y12 |    Y11    | Y10 |       Y9      | Y8 |
+| 5 |  Y7 |     Y6    |     Y5     |  Y4 |     Y3    |  Y2 |       Y1      | Y0 |
+| 6 |  R9 |     R8    |     R7     |  R6 |     R5    |  R4 |       R3      | R2 |
+| 7 |  R1 |     R0    |     Rd     |  0  |     0     |  0  |       0       |  0 |
+| 8 |  0  |     0     |      0     |  0  |     0     |  0  |       0       |  0 |
+| 9 |  H4 |     H3    |     H2     |  H1 |     H0    |  0  |       0       |  0 |
 
 ## Key
 
@@ -101,6 +101,8 @@ Note: Tool reports are sent once when a tool enters into range of the tablet. Th
     Higher when a tool is far from the tablet
 
     Lower when a tool is close to the tablet
+
+- MouseFlag = 1 when the report is a Mouse Report, 0 otherwise
 
 - B = Button data
 

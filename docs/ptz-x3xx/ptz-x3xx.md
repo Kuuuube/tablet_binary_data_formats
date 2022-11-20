@@ -151,10 +151,6 @@ Each cell is one bit, rows are byte numbers, and columns are bit numbers from MS
 
     Lower when a tool is close to the tablet
 
-- Th = Thumbwheel value
-
-- Thd = 0 when thumbwheel is rotated backwards, 1 when thumbwheel is rotated forwards
-
 - R = Rotation value, 0 when the front of the tool is aligned with the right side of the tablet, Max value when the front of the tool is aligned with the left side of the tablet
 
     Max rotation is `11100001 00`. Not all bits are 1 when the max is reached.
